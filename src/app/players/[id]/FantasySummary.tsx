@@ -7,7 +7,7 @@ import {
   useScoringFormula,
 } from "@/lib/useScoringFormula";
 
-type Game = Record<string, unknown>;
+import type { Game } from "./GameTypes";
 
 type Props = {
   games: Game[];

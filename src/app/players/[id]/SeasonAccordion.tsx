@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import GameLog from "./GameLog";
 import FantasySummary from "./FantasySummary";
+import type { Game } from "./GameTypes";
 
 type Season = {
   SEASON_ID: string;
@@ -21,8 +22,6 @@ type Season = {
   TOV: number;
   PTS: number;
 };
-
-type Game = Record<string, unknown>;
 
 type Props = {
   playerId: string;
@@ -227,7 +226,7 @@ export default function SeasonAccordion({
           <GameLog
             games={games}
             loading={loading}
-            error={error}
+            error={error ?? undefined}
             showFantasySummary={false}
           />
 

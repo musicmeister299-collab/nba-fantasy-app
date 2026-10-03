@@ -1,0 +1,23 @@
+export type Game = {
+    Game_ID: string;
+    GAME_DATE: string;
+    MATCHUP: string;
+    WL: string;
+    MIN: number;
+    FGM: number;
+    FGA: number;
+    FG_PCT: number;
+    FG3M: number;
+    FG3A: number;
+    FG3_PCT: number;
+    FTM: number;
+    FTA: number;
+    FT_PCT: number;
+    REB: number;
+    AST: number;
+    STL: number;
+    BLK: number;
+    TOV: number;
+    PTS: number;
+    PLUS_MINUS: number;
+  };

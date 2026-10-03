@@ -42,7 +42,7 @@ type Player = {
   };
 };
 
-type Game = Record<string, unknown>;
+import type { Game } from "../../GameTypes";
 
 type PlayerResponse = {
   data: {
@@ -457,7 +457,7 @@ export default async function SeasonPage({
             <GameLog
               games={games}
               loading={false}
-              error={null}
+              error={undefined}
               showFantasySummary={false}
             />
 
