@@ -61,7 +61,7 @@ async function getPlayer(
   id: string
 ): Promise<PlayerResponse> {
   const response = await fetch(
-    `https://nba-fantasy-app.vercel.app/api/players/${id}`,
+    `https://nba-fantasy-app-alyq-gilt.vercel.app//api/players/${id}`,
     {
       cache: "no-store",
     }
@@ -79,7 +79,7 @@ async function getGames(
   season: string
 ): Promise<GamesResponse> {
   const response = await fetch(
-    `https://nba-fantasy-app.vercel.app/api/players/${id}/games?season=${encodeURIComponent(
+    `https://nba-fantasy-app-alyq-gilt.vercel.app//api/players/${id}/games?season=${encodeURIComponent(
       season
     )}`,
     {
